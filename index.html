@@ -1,821 +1,904 @@
-8<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NEXSIGHT SECURITY SOLUTIONS</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #0a0a0a;
-            color: #fff;
-            margin: 0;
-            padding: 0;
-        }
-        header {
-            background: #001f3f;
-            padding: 20px;
-            text-align: center;
-        }
-        header h1 {
-            margin: 0;
-            font-size: 2.5em;
-        }
-        section {
-            padding: 20px;
-        }
-        .services {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-around;
-        }
-        .service {
-            background: #003366;
-            margin: 10px;
-            padding: 20px;
-            border-radius: 8px;
-            flex: 1 1 30%;
-            text-align: center;
-        }
-        footer {
-            background: #001f3f;
-            text-align: center;
-            padding: 10px;
-            margin-top: 20px;
-        }
-    </style>
-</head>
-<body>
-    <header>
-        <h1>NEXSIGHT SECURITY SOLUTIONS</h1>
-        <p>Secure Today, Protect Tomorrow</p>
-    </header>
-    <section>
-        <h2>Our Services</h2>
-        <div class="services">
-            <div class="service">
-                <h3>CCTV Installation</h3>
-                <p>Complete CCTV installation for home, shop, and office.</p>
-            </div>
-            <div class="service">
-                <h3>IP Camera Setup</h3>
-                <p>High-quality IP camera installation and configuration.</p>
-            </div>
-            <div class="service">
-                <h3>DVR/NVR Configuration</h3>
-                <p>Set up DVR/NVR for smooth
-                    ```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nexsight Security Solutions - Secure Today, Protect Tomorrow</title>
-    <!-- Tailwind CSS -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <!-- FontAwesome 6 for Exact Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- Google Fonts: Poppins for clean geometric layout -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    fontFamily: {
-                        sans: ['Poppins', 'sans-serif'],
-                    },
-                    colors: {
-                        brand: {
-                            bgDark: '#010918',
-                            navDark: '#020b1b',
-                            cardDark: '#031430',
-                            accentBlue: '#0066FF',
-                            accentHover: '#0052CC',
-                            whatsapp: '#25D366'
-                        }
-                    },
-                    screens: {
-                        'lg': '1024px',
-                        'xl': '1280px',
-                    }
-                }
-            }
-        }
-    </script>
-    <style>
-        body {
-            background-color: #010918;
-            color: #ffffff;
-            scroll-behavior: smooth;
-        }
-        /* City Skyline Overlay matching the screenshot exactly */
-        .skyline-bg {
-            background: linear-gradient(180deg, rgba(1, 9, 24, 0.75) 0%, rgba(1, 9, 24, 0.95) 100%), 
-                        url('https://images.unsplash.com/photo-1519501025264-65ba15a82390?auto=format&fit=crop&w=1920&q=80') no-repeat center center;
-            background-size: cover;
-        }
-        .glow-card-hover {
-            transition: all 0.3s ease;
-        }
-        .glow-card-hover:hover {
-            border-color: #0066FF;
-            box-shadow: 0 0 15px rgba(0, 102, 255, 0.25);
-            transform: translateY(-2px);
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NEXSIGHT Security Solutions</title>
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+background:#020b1c;
+color:#fff;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+.container{
+width:90%;
+margin:auto;
+}
+
+/* HEADER */
+
+header{
+position:sticky;
+top:0;
+background:#04142c;
+z-index:1000;
+}
+
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 5%;
+}
+
+.logo h1{
+font-size:42px;
+color:#1b6cff;
+}
+
+.logo p{
+font-size:15px;
+color:#4ea1ff;
+}
+
+nav ul{
+display:flex;
+gap:30px;
+list-style:none;
+}
+
+nav ul li a{
+text-decoration:none;
+color:white;
+font-weight:bold;
+}
+
+.phone-btn{
+background:#1565ff;
+padding:12px 20px;
+border-radius:8px;
+text-decoration:none;
+color:#fff;
+font-weight:bold;
+}
+
+/* HERO */
+
+.hero{
+
+background:
+linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.7)),
+url("https://images.unsplash.com/photo-1558002038-1055907df827?q=80&w=1600");
+
+background-size:cover;
+background-position:center;
+
+padding:80px 5%;
+
+display:flex;
+align-items:center;
+justify-content:space-between;
+gap:40px;
+
+flex-wrap:wrap;
+}
+
+.hero-left{
+flex:1;
+min-width:300px;
+}
+
+.hero-left h1{
+
+font-size:75px;
+color:#0a67ff;
+
+}
+
+.hero-left h2{
+
+font-size:50px;
+margin-bottom:10px;
+
+}
+
+.hero-left p{
+
+color:#1982ff;
+font-size:32px;
+margin-bottom:30px;
+
+}
+
+.hero ul{
+list-style:none;
+line-height:2.5;
+font-size:22px;
+}
+
+.hero ul i{
+color:#1565ff;
+margin-right:10px;
+}
+
+.hero-buttons{
+margin-top:30px;
+display:flex;
+gap:20px;
+flex-wrap:wrap;
+}
+
+.btn{
+
+padding:18px 30px;
+border-radius:10px;
+text-decoration:none;
+font-weight:bold;
+
+}
+
+.call{
+
+background:#1565ff;
+color:white;
+
+}
+
+.whatsapp{
+
+border:2px solid #25d366;
+color:#25d366;
+
+}
+
+/* RIGHT IMAGES */
+
+.hero-right{
+
+display:flex;
+flex-direction:column;
+gap:20px;
+
+}
+
+.hero-right img{
+
+width:350px;
+border-radius:15px;
+box-shadow:0 0 30px #000;
+
+}
+
+/* ABOUT */
+
+.about{
+
+padding:70px 5%;
+
+}
+
+.section-title{
+
+text-align:center;
+font-size:40px;
+margin-bottom:40px;
+
+}
+
+.about-grid{
+
+display:grid;
+
+grid-template-columns:1fr 3fr;
+
+gap:30px;
+
+}
+
+.about-box{
+
+background:#07162f;
+
+padding:30px;
+
+border-radius:15px;
+
+}
+
+.features{
+
+display:grid;
+
+grid-template-columns:repeat(4,1fr);
+
+gap:20px;
+
+}
+
+.feature{
+
+background:#07162f;
+
+padding:30px;
+
+text-align:center;
+
+border-radius:15px;
+
+}
+
+.feature i{
+
+font-size:50px;
+
+color:#1565ff;
+
+margin-bottom:20px;
+
+}
+
+/* SERVICES */
+
+.services{
+
+padding:70px 5%;
+
+}
+
+.cards{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+
+gap:20px;
+
+}
+
+.card{
+
+background:#07162f;
+
+padding:30px;
+
+text-align:center;
+
+border-radius:15px;
+
+transition:.3s;
+
+}
+
+.card:hover{
+
+transform:translateY(-10px);
+
+}
+
+.card i{
+
+font-size:50px;
+
+color:#1565ff;
+
+margin-bottom:20px;
+
+}
+
+/* GALLERY */
+
+.gallery{
+
+padding:70px 5%;
+
+}
+
+.gallery-grid{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+
+gap:20px;
+
+}
+
+.gallery img{
+
+width:100%;
+
+height:220px;
+
+object-fit:cover;
+
+border-radius:15px;
+
+}
+
+/* CONTACT */
+
+.contact{
+
+padding:70px 5%;
+
+display:grid;
+
+grid-template-columns:1fr 1fr;
+
+gap:40px;
+
+}
+
+.contact-info{
+
+background:#07162f;
+
+padding:30px;
+
+border-radius:15px;
+
+}
+
+.contact-info p{
+
+margin:20px 0;
+
+font-size:18px;
+
+}
+
+.contact-info i{
+
+color:#1565ff;
+
+margin-right:10px;
+
+}
+
+form{
+
+background:#07162f;
+
+padding:30px;
+
+border-radius:15px;
+
+}
+
+input,textarea{
+
+width:100%;
+
+padding:15px;
+
+margin-bottom:20px;
+
+background:#03101f;
+
+border:none;
+
+color:white;
+
+border-radius:8px;
+
+}
+
+button{
+
+background:#1565ff;
+
+color:white;
+
+border:none;
+
+padding:15px 30px;
+
+border-radius:8px;
+
+font-size:18px;
+
+cursor:pointer;
+
+}
+
+/* FOOTER */
+
+footer{
+
+background:#000814;
+
+padding:25px;
+
+text-align:center;
+
+}
+
+/* WhatsApp */
+
+.float{
+
+position:fixed;
+
+bottom:20px;
+
+right:20px;
+
+width:65px;
+
+height:65px;
+
+background:#25d366;
+
+color:white;
+
+border-radius:50%;
+
+display:flex;
+
+align-items:center;
+
+justify-content:center;
+
+font-size:35px;
+
+text-decoration:none;
+
+box-shadow:0 0 20px rgba(0,0,0,.5);
+
+}
+
+/* Responsive */
+
+@media(max-width:900px){
+
+.hero{
+
+text-align:center;
+
+}
+
+.hero-left h1{
+
+font-size:50px;
+
+}
+
+.hero-left h2{
+
+font-size:35px;
+
+}
+
+.hero-left p{
+
+font-size:22px;
+
+}
+
+.hero-right img{
+
+width:280px;
+
+}
+
+.about-grid,
+
+.contact{
+
+grid-template-columns:1fr;
+
+}
+
+.features{
+
+grid-template-columns:1fr 1fr;
+
+}
+
+nav{
+
+flex-direction:column;
+
+gap:20px;
+
+}
+
+nav ul{
+
+flex-wrap:wrap;
+
+justify-content:center;
+
+}
+
+}
+
+@media(max-width:600px){
+
+.features{
+
+grid-template-columns:1fr;
+
+}
+
+}
+
+</style>
+
 </head>
-<body class="font-sans antialiased overflow-x-hidden">
 
-    <!-- HEADER / NAVIGATION (Exact matching styling and Original Shield Logo) -->
-    <header class="bg-brand-navDark sticky top-0 z-50 border-b border-blue-950/80">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex items-center justify-between h-20">
-                
-                <!-- Logo with exact Shield outline & security camera lens in the center -->
-                <div class="flex items-center space-x-3">
-                    <div class="relative w-14 h-14 flex-shrink-0">
-                        <svg viewBox="0 0 120 120" class="w-full h-full drop-shadow-[0_0_10px_rgba(0,102,255,0.5)]">
-                            <!-- Shield Outer Silver/Grey Bezel -->
-                            <path d="M60,10 L100,26 L100,68 C100,89 83,105 60,113 C37,105 20,89 20,68 L20,26 Z" fill="#031430" stroke="#475569" stroke-width="4.5" stroke-linejoin="round"/>
-                            <!-- Shield Inner High-Tech Blue Bezel -->
-                            <path d="M60,16 L92,30 L92,66 C92,83 78,97 60,104 C42,97 28,83 28,66 L28,30 Z" fill="#020b1a" stroke="#0066FF" stroke-width="2.5" stroke-linejoin="round"/>
-                            <!-- Outer Camera Ring -->
-                            <circle cx="60" cy="58" r="20" fill="#1e293b" stroke="#64748b" stroke-width="2"/>
-                            <!-- Inner Lens Ring -->
-                            <circle cx="60" cy="58" r="16" fill="#0f172a" stroke="#3b82f6" stroke-width="1.5"/>
-                            <!-- Lens Glass with Deep Blue Gradient -->
-                            <circle cx="60" cy="58" r="12" fill="url(#logoLensGlass)"/>
-                            <!-- Aperture Iris Reflection -->
-                            <circle cx="57" cy="55" r="5" fill="#00ffff" opacity="0.35"/>
-                            <circle cx="60" cy="58" r="3" fill="#000000"/>
-                            <!-- Lens Reflection Flares -->
-                            <circle cx="55" cy="53" r="2" fill="#ffffff" opacity="0.85"/>
-                            <circle cx="66" cy="64" r="0.8" fill="#ffffff" opacity="0.6"/>
-                            
-                            <defs>
-                                <radialGradient id="logoLensGlass" cx="40%" cy="30%" r="70%">
-                                    <stop offset="0%" stop-color="#1d4ed8"/>
-                                    <stop offset="50%" stop-color="#1e3a8a"/>
-                                    <stop offset="100%" stop-color="#020617"/>
-                                </radialGradient>
-                            </defs>
-                        </svg>
-                    </div>
-                    <div>
-                        <div class="flex items-baseline leading-none">
-                            <span class="text-2xl font-black tracking-wider text-brand-accentBlue">NEX</span>
-                            <span class="text-2xl font-extrabold tracking-wider text-white">SIGHT</span>
-                        </div>
-                        <p class="text-[9.5px] uppercase tracking-[0.12em] text-white font-bold mt-0.5">SECURITY SOLUTIONS</p>
-                        <p class="text-[7.5px] text-cyan-400 tracking-wider uppercase font-semibold">Secure Today, Protect Tomorrow</p>
-                    </div>
-                </div>
+<body>
 
-                <!-- Desktop Navigation Menu -->
-                <nav class="hidden md:flex space-x-6 lg:space-x-8 text-xs font-extrabold tracking-wider">
-                    <a href="#home" class="text-brand-accentBlue border-b-2 border-brand-accentBlue pb-1">HOME</a>
-                    <a href="#about" class="text-gray-300 hover:text-brand-accentBlue transition">ABOUT US</a>
-                    <a href="#services" class="text-gray-300 hover:text-brand-accentBlue transition">SERVICES</a>
-                    <a href="#gallery" class="text-gray-300 hover:text-brand-accentBlue transition">GALLERY</a>
-                    <a href="#whyus" class="text-gray-300 hover:text-brand-accentBlue transition">WHY US</a>
-                    <a href="#contact" class="text-gray-300 hover:text-brand-accentBlue transition">CONTACT US</a>
-                </nav>
+<header>
 
-                <!-- Top Right Call CTA -->
-                <div class="hidden md:flex items-center">
-                    <a href="tel:8685809892" class="bg-brand-accentBlue hover:bg-brand-accentHover text-white font-bold px-6 py-2.5 rounded text-sm flex items-center space-x-2 transition duration-300 shadow-md">
-                        <i class="fa-solid fa-phone"></i>
-                        <span>8685809892</span>
-                    </a>
-                </div>
+<nav>
 
-                <!-- Hamburger mobile button -->
-                <div class="md:hidden flex items-center">
-                    <button id="mobile-toggle" class="text-white hover:text-brand-accentBlue focus:outline-none">
-                        <i class="fa-solid fa-bars text-xl"></i>
-                    </button>
-                </div>
+<div class="logo">
 
-            </div>
-        </div>
+<h1>NEXSIGHT</h1>
 
-        <!-- Mobile Drawer links -->
-        <div id="mobile-menu" class="hidden md:hidden bg-brand-navDark border-t border-blue-950 px-4 py-4 space-y-2">
-            <a href="#home" class="mob-link block text-brand-accentBlue font-bold py-2">HOME</a>
-            <a href="#about" class="mob-link block text-gray-300 hover:text-brand-accentBlue py-2">ABOUT US</a>
-            <a href="#services" class="mob-link block text-gray-300 hover:text-brand-accentBlue py-2">SERVICES</a>
-            <a href="#gallery" class="mob-link block text-gray-300 hover:text-brand-accentBlue py-2">GALLERY</a>
-            <a href="#whyus" class="mob-link block text-gray-300 hover:text-brand-accentBlue py-2">WHY US</a>
-            <a href="#contact" class="mob-link block text-gray-300 hover:text-brand-accentBlue py-2">CONTACT US</a>
-            <a href="tel:8685809892" class="w-full bg-brand-accentBlue text-white font-bold py-2.5 px-4 rounded text-center block mt-3">
-                <i class="fa-solid fa-phone mr-2"></i>Call 8685809892
-            </a>
-        </div>
-    </header>
+<p>Security Solutions</p>
 
-    <!-- HERO SECTION (Identical Layout with City Skyline & Realistic Cameras) -->
-    <section id="home" class="relative skyline-bg pt-16 pb-24 lg:py-28 overflow-hidden">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-                
-                <!-- Left panel text/bullets -->
-                <div class="lg:col-span-6 space-y-6">
-                    <h1 class="text-6xl sm:text-7xl font-black tracking-tight leading-none">
-                        <span class="text-brand-accentBlue">NEX</span><span class="text-white">SIGHT</span><br>
-                        <span class="text-2xl sm:text-3xl text-white font-extrabold tracking-wider uppercase block mt-2">SECURITY SOLUTIONS</span>
-                    </h1>
-                    
-                    <p class="text-brand-accentBlue text-lg font-bold tracking-wide uppercase">
-                        Secure Today, Protect Tomorrow
-                    </p>
+</div>
 
-                    <!-- Exact Bullets List with Blue Circular Icons -->
-                    <div class="space-y-4">
-                        <div class="flex items-center space-x-3">
-                            <span class="w-8 h-8 rounded-full bg-brand-accentBlue flex items-center justify-center text-white text-xs shadow-md flex-shrink-0">
-                                <i class="fa-solid fa-video"></i>
-                            </span>
-                            <span class="text-gray-200 font-semibold text-sm sm:text-base">CCTV Camera Installation</span>
-                        </div>
-                        <div class="flex items-center space-x-3">
-                            <span class="w-8 h-8 rounded-full bg-brand-accentBlue flex items-center justify-center text-white text-xs shadow-md flex-shrink-0">
-                                <i class="fa-solid fa-network-wired"></i>
-                            </span>
-                            <span class="text-gray-200 font-semibold text-sm sm:text-base">IP Camera Setup</span>
-                        </div>
-                        <div class="flex items-center space-x-3">
-                            <span class="w-8 h-8 rounded-full bg-brand-accentBlue flex items-center justify-center text-white text-xs shadow-md flex-shrink-0">
-                                <i class="fa-solid fa-server"></i>
-                            </span>
-                            <span class="text-gray-200 font-semibold text-sm sm:text-base">DVR / NVR Configuration</span>
-                        </div>
-                        <div class="flex items-center space-x-3">
-                            <span class="w-8 h-8 rounded-full bg-brand-accentBlue flex items-center justify-center text-white text-xs shadow-md flex-shrink-0">
-                                <i class="fa-solid fa-mobile-screen-button"></i>
-                            </span>
-                            <span class="text-gray-200 font-semibold text-sm sm:text-base">Mobile Remote Monitoring</span>
-                        </div>
-                        <div class="flex items-center space-x-3">
-                            <span class="w-8 h-8 rounded-full bg-brand-accentBlue flex items-center justify-center text-white text-xs shadow-md flex-shrink-0">
-                                <i class="fa-solid fa-house-shield"></i>
-                            </span>
-                            <span class="text-gray-200 font-semibold text-sm sm:text-base">Home, Shop & Office Security</span>
-                        </div>
-                    </div>
+<ul>
 
-                    <!-- Call/Whatsapp Double Buttons matching screenshot exactly -->
-                    <div class="flex flex-col sm:flex-row gap-4 pt-4 items-stretch sm:items-center">
-                        
-                        <!-- CALL NOW Blue Button with 2 lines of text -->
-                        <a href="tel:8685809892" class="bg-brand-accentBlue hover:bg-brand-accentHover text-white px-6 py-3 rounded-lg flex items-center space-x-4 transition shadow-lg shadow-blue-500/20">
-                            <i class="fa-solid fa-phone text-2xl"></i>
-                            <div class="text-left leading-tight">
-                                <p class="text-[9px] uppercase font-bold tracking-wider text-blue-200">CALL NOW</p>
-                                <p class="text-base font-black">8685809892</p>
-                            </div>
-                        </a>
-                        
-                        <!-- WHATSAPP US Black Button with Green border -->
-                        <a href="https://wa.me/918685809892" target="_blank" class="bg-black/80 hover:bg-black border-2 border-brand-whatsapp text-white px-6 py-4 rounded-lg flex items-center justify-center space-x-3 transition">
-                            <i class="fa-brands fa-whatsapp text-2xl text-brand-whatsapp"></i>
-                            <span class="font-extrabold tracking-wider text-sm">WHATSAPP US</span>
-                        </a>
-                    </div>
-                </div>
+<li><a href="#">HOME</a></li>
 
-                <!-- Right panel high-fidelity 3D Vector Security Cameras (Matches screenshot positions) -->
-                <div class="lg:col-span-6 relative flex flex-col items-center justify-center space-y-8">
-                    
-                    <!-- Top White Bullet Camera Vector -->
-                    <div class="relative w-full max-w-[360px] drop-shadow-[0_20px_35px_rgba(0,102,255,0.25)]">
-                        <svg viewBox="0 0 400 240" class="w-full h-auto">
-                            <!-- Bracket Wall Mount -->
-                            <path d="M 320,60 L 320,160 L 300,140 L 300,80 Z" fill="#475569" />
-                            <rect x="310" y="40" width="25" height="150" rx="4" fill="#64748b" />
-                            <path d="M 240,110 L 310,100 L 310,120 L 240,115 Z" fill="#94a3b8" />
-                            <circle cx="240" cy="112" r="15" fill="#475569" stroke="#cbd5e1" stroke-width="2" />
-                            <!-- White Sunshield Cover -->
-                            <path d="M 100,50 L 290,75 L 280,145 L 120,125 Z" fill="#f8fafc" />
-                            <path d="M 80,42 L 300,70 L 290,82 L 95,58 Z" fill="#e2e8f0" />
-                            <path d="M 120,70 L 280,90 L 270,140 L 120,120 Z" fill="#cbd5e1" />
-                            <ellipse cx="110" cy="92" rx="15" ry="35" fill="#0f172a" />
-                            <ellipse cx="110" cy="92" rx="7" ry="18" fill="#0284c7" />
-                            <circle cx="110" cy="92" r="4" fill="#000" />
-                            <circle cx="108" cy="88" r="2" fill="#fff" opacity="0.8" />
-                            <!-- Branding -->
-                            <text x="170" y="102" fill="#334155" font-size="12" font-weight="900" transform="rotate(6, 170, 102)" letter-spacing="1">NEXSIGHT</text>
-                        </svg>
-                    </div>
+<li><a href="#about">ABOUT</a></li>
 
-                    <!-- Bottom White Dome Camera Vector -->
-                    <div class="relative w-full max-w-[250px] drop-shadow-[0_20px_30px_rgba(0,102,255,0.2)]">
-                        <svg viewBox="0 0 300 220" class="w-full h-auto">
-                            <!-- Ceiling base Mount -->
-                            <ellipse cx="150" cy="50" rx="100" ry="20" fill="#64748b" />
-                            <rect x="50" y="45" width="200" height="15" fill="#94a3b8" />
-                            <ellipse cx="150" cy="60" rx="98" ry="15" fill="#f1f5f9" />
-                            <!-- Dome Glass globe -->
-                            <path d="M 65,60 A 85,85 0 0,0 235,60 Z" fill="url(#glassDome)" />
-                            <!-- Internal Camera Rotator -->
-                            <circle cx="150" cy="105" r="30" fill="#0f172a" stroke="#1e293b" stroke-width="4" />
-                            <circle cx="150" cy="105" r="12" fill="#000" />
-                            <circle cx="147" cy="102" r="3" fill="#38bdf8" />
-                            <circle cx="145" cy="100" r="1.5" fill="#ffffff" opacity="0.8" />
-                            <text x="110" y="45" fill="#1e3a8a" font-size="11" font-weight="900" letter-spacing="1">NEXSIGHT</text>
+<li><a href="#services">SERVICES</a></li>
 
-                            <defs>
-                                <radialGradient id="glassDome" cx="50%" cy="30%" r="55%">
-                                    <stop offset="0%" stop-color="#475569" />
-                                    <stop offset="65%" stop-color="#0f172a" />
-                                    <stop offset="100%" stop-color="#020617" />
-                                </radialGradient>
-                            </defs>
-                        </svg>
-                    </div>
+<li><a href="#gallery">GALLERY</a></li>
 
-                </div>
+<li><a href="#contact">CONTACT</a></li>
 
-            </div>
-        </div>
-    </section>
+</ul>
 
-    <!-- ABOUT US SECTION (Perfect row/dividers matching the layout exactly) -->
-    <section id="about" class="bg-[#010918] py-16 border-t border-blue-950/80">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            
-            <!-- Dark card panel container -->
-            <div class="bg-brand-cardDark border border-blue-900/30 rounded-2xl p-8 lg:p-12">
-                <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-0 items-center">
-                    
-                    <!-- Left Column: Paragraph & Read More (Spans 4 columns) -->
-                    <div class="lg:col-span-4 pr-0 lg:pr-12 pb-6 lg:pb-0 space-y-4">
-                        <div class="flex items-center space-x-3">
-                            <div class="w-1.5 h-6 bg-brand-accentBlue rounded-full"></div>
-                            <h2 class="text-xl font-extrabold tracking-wider text-white">ABOUT US</h2>
-                        </div>
-                        <p class="text-xs sm:text-sm text-gray-300 leading-relaxed font-medium">
-                            NEXSIGHT SECURITY SOLUTIONS is a trusted CCTV and Security Service Provider in Karnal, Haryana. We provide professional CCTV installation, IP camera setup, DVR/NVR configuration and complete surveillance solutions for homes, shops, offices and industries.
-                        </p>
-                        <div class="pt-2">
-                            <button onclick="openModal('read-more-modal')" class="bg-brand-accentBlue hover:bg-blue-700 text-white text-xs font-bold px-6 py-3 rounded transition shadow-md">
-                                READ MORE
-                            </button>
-                        </div>
-                    </div>
+<a href="tel:8685809892" class="phone-btn">
 
-                    <!-- Right Column: 4 Features with Thin Dividers (Spans 8 columns) -->
-                    <div class="lg:col-span-8 grid grid-cols-1 md:grid-cols-4 gap-6 lg:gap-0 divide-y md:divide-y-0 md:divide-x divide-blue-900/30">
-                        
-                        <!-- Feature 1: Quality Products -->
-                        <div class="pt-6 md:pt-0 md:px-6 text-center flex flex-col items-center space-y-3">
-                            <div class="w-14 h-14 rounded-full bg-[#0d254c] border border-brand-accentBlue/30 flex items-center justify-center text-brand-accentBlue shadow-lg">
-                                <i class="fa-solid fa-medal text-2xl"></i>
-                            </div>
-                            <h3 class="text-xs font-black text-white tracking-wide uppercase">QUALITY PRODUCTS</h3>
-                            <p class="text-[11px] text-gray-400 leading-relaxed">We use high quality and reliable security products.</p>
-                        </div>
+<i class="fa-solid fa-phone"></i>
 
-                        <!-- Feature 2: Expert Technicians -->
-                        <div class="pt-6 md:pt-0 md:px-6 text-center flex flex-col items-center space-y-3">
-                            <div class="w-14 h-14 rounded-full bg-[#0d254c] border border-brand-accentBlue/30 flex items-center justify-center text-brand-accentBlue shadow-lg">
-                                <i class="fa-solid fa-user-gear text-2xl"></i>
-                            </div>
-                            <h3 class="text-xs font-black text-white tracking-wide uppercase">EXPERT TECHNICIANS</h3>
-                            <p class="text-[11px] text-gray-400 leading-relaxed">Our experienced team delivers professional installation.</p>
-                        </div>
+8685809892
 
-                        <!-- Feature 3: Trust & Security -->
-                        <div class="pt-6 md:pt-0 md:px-6 text-center flex flex-col items-center space-y-3">
-                            <div class="w-14 h-14 rounded-full bg-[#0d254c] border border-brand-accentBlue/30 flex items-center justify-center text-brand-accentBlue shadow-lg">
-                                <i class="fa-solid fa-shield-halved text-2xl"></i>
-                            </div>
-                            <h3 class="text-xs font-black text-white tracking-wide uppercase">TRUST & SECURITY</h3>
-                            <p class="text-[11px] text-gray-400 leading-relaxed">Your security is our priority. We ensure complete protection.</p>
-                        </div>
+</a>
 
-                        <!-- Feature 4: 24/7 Support -->
-                        <div class="pt-6 md:pt-0 md:pl-6 text-center flex flex-col items-center space-y-3">
-                            <div class="w-14 h-14 rounded-full bg-[#0d254c] border border-brand-accentBlue/30 flex items-center justify-center text-brand-accentBlue shadow-lg">
-                                <i class="fa-solid fa-headset text-2xl"></i>
-                            </div>
-                            <h3 class="text-xs font-black text-white tracking-wide uppercase">24/7 SUPPORT</h3>
-                            <p class="text-[11px] text-gray-400 leading-relaxed">We are always here to support you anytime.</p>
-                        </div>
+</nav>
 
-                    </div>
+</header>
 
-                </div>
-            </div>
+<!-- HERO -->
 
-        </div>
-    </section>
+<section class="hero">
 
-    <!-- OUR SERVICES SECTION (Perfect 7-Column Layout on Desktop in a Single Row) -->
-    <section id="services" class="py-16 bg-[#010918]">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            
-            <!-- Styled Title with Blue Pill dash -->
-            <div class="flex items-center justify-center space-x-3 mb-12">
-                <h2 class="text-2xl sm:text-3xl font-black tracking-widest text-white uppercase">OUR SERVICES</h2>
-                <div class="w-12 h-1.5 bg-brand-accentBlue rounded-full"></div>
-            </div>
+<div class="hero-left">
 
-            <!-- Exact 7 Services Columns for Desktop Preview -->
-            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-7 gap-4">
-                
-                <!-- Service 1 -->
-                <div class="glow-card-hover rounded-xl p-4 flex flex-col items-center text-center justify-between min-h-[230px] bg-brand-cardDark/50 border border-blue-950">
-                    <div class="text-brand-accentBlue text-3xl mb-3">
-                        <i class="fa-solid fa-video"></i>
-                    </div>
-                    <div class="space-y-1">
-                        <h4 class="text-[11px] font-black text-white uppercase tracking-wider">CCTV CAMERA INSTALLATION</h4>
-                        <p class="text-[10px] text-gray-400 leading-relaxed">Complete CCTV installation for home, shop, office & factory.</p>
-                    </div>
-                </div>
+<h1>NEXSIGHT</h1>
 
-                <!-- Service 2 -->
-                <div class="glow-card-hover rounded-xl p-4 flex flex-col items-center text-center justify-between min-h-[230px] bg-brand-cardDark/50 border border-blue-950">
-                    <div class="text-brand-accentBlue text-3xl mb-3">
-                        <i class="fa-solid fa-camera-rotate"></i>
-                    </div>
-                    <div class="space-y-1">
-                        <h4 class="text-[11px] font-black text-white uppercase tracking-wider">IP CAMERA SETUP</h4>
-                        <p class="text-[10px] text-gray-400 leading-relaxed">High quality IP camera installation and configuration.</p>
-                    </div>
-                </div>
+<h2>SECURITY SOLUTIONS</h2>
 
-                <!-- Service 3 -->
-                <div class="glow-card-hover rounded-xl p-4 flex flex-col items-center text-center justify-between min-h-[230px] bg-brand-cardDark/50 border border-blue-950">
-                    <div class="text-brand-accentBlue text-3xl mb-3">
-                        <i class="fa-solid fa-server"></i>
-                    </div>
-                    <div class="space-y-1">
-                        <h4 class="text-[11px] font-black text-white uppercase tracking-wider">DVR / NVR INSTALLATION</h4>
-                        <p class="text-[10px] text-gray-400 leading-relaxed">DVR & NVR installation with proper setup and configuration.</p>
-                    </div>
-                </div>
+<p>Secure Today, Protect Tomorrow</p>
 
-                <!-- Service 4 -->
-                <div class="glow-card-hover rounded-xl p-4 flex flex-col items-center text-center justify-between min-h-[230px] bg-brand-cardDark/50 border border-blue-950">
-                    <div class="text-brand-accentBlue text-3xl mb-3">
-                        <i class="fa-solid fa-wifi"></i>
-                    </div>
-                    <div class="space-y-1">
-                        <h4 class="text-[11px] font-black text-white uppercase tracking-wider">WIRELESS CAMERA SETUP</h4>
-                        <p class="text-[10px] text-gray-400 leading-relaxed">Wireless camera installation with mobile connectivity.</p>
-                    </div>
-                </div>
+<ul>
 
-                <!-- Service 5 -->
-                <div class="glow-card-hover rounded-xl p-4 flex flex-col items-center text-center justify-between min-h-[230px] bg-brand-cardDark/50 border border-blue-950">
-                    <div class="text-brand-accentBlue text-3xl mb-3">
-                        <i class="fa-solid fa-mobile-screen-button"></i>
-                    </div>
-                    <div class="space-y-1">
-                        <h4 class="text-[11px] font-black text-white uppercase tracking-wider">MOBILE VIEWING CONFIGURATION</h4>
-                        <p class="text-[10px] text-gray-400 leading-relaxed">View your cameras live on mobile anytime, anywhere.</p>
-                    </div>
-                </div>
+<li><i class="fa-solid fa-video"></i> CCTV Camera Installation</li>
 
-                <!-- Service 6 -->
-                <div class="glow-card-hover rounded-xl p-4 flex flex-col items-center text-center justify-between min-h-[230px] bg-brand-cardDark/50 border border-blue-950">
-                    <div class="text-brand-accentBlue text-3xl mb-3">
-                        <i class="fa-solid fa-screwdriver-wrench"></i>
-                    </div>
-                    <div class="space-y-1">
-                        <h4 class="text-[11px] font-black text-white uppercase tracking-wider">CAMERA REPAIR & MAINTENANCE</h4>
-                        <p class="text-[10px] text-gray-400 leading-relaxed">Repair, service and maintenance for all types of cameras.</p>
-                    </div>
-                </div>
+<li><i class="fa-solid fa-camera"></i> IP Camera Setup</li>
 
-                <!-- Service 7 -->
-                <div class="glow-card-hover rounded-xl p-4 flex flex-col items-center text-center justify-between min-h-[230px] bg-brand-cardDark/50 border border-blue-950">
-                    <div class="text-brand-accentBlue text-3xl mb-3">
-                        <i class="fa-solid fa-shield-halved"></i>
-                    </div>
-                    <div class="space-y-1">
-                        <h4 class="text-[11px] font-black text-white uppercase tracking-wider">AMC SERVICES</h4>
-                        <p class="text-[10px] text-gray-400 leading-relaxed">Annual Maintenance Contracts for hassle free security.</p>
-                    </div>
-                </div>
+<li><i class="fa-solid fa-hard-drive"></i> DVR / NVR Configuration</li>
 
-            </div>
+<li><i class="fa-solid fa-mobile-screen"></i> Mobile Remote Monitoring</li>
 
-        </div>
-    </section>
+<li><i class="fa-solid fa-house"></i> Home, Shop & Office Security</li>
 
-    <!-- OUR GALLERY SECTION (Perfect 5-Column Single Row Layout on Desktop with Central View Button) -->
-    <section id="gallery" class="py-16 bg-[#010918]">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            
-            <!-- Styled Title with Blue Pill dash -->
-            <div class="flex items-center justify-center space-x-3 mb-12">
-                <h2 class="text-2xl sm:text-3xl font-black tracking-widest text-white uppercase">OUR GALLERY</h2>
-                <div class="w-12 h-1.5 bg-brand-accentBlue rounded-full"></div>
-            </div>
+</ul>
 
-            <!-- Exact 5-Column Single Row Layout on Desktop -->
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4 items-stretch">
-                
-                <!-- Gallery Image 1 -->
-                <div class="rounded-lg overflow-hidden border border-blue-900/40 h-60 relative group">
-                    <img src="https://images.unsplash.com/photo-1622547748225-3fc4abd2cca0?auto=format&fit=crop&w=500&q=80" alt="Camera Pile Setup" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" onerror="this.src='https://placehold.co/400x300/031430/FFF?text=CCTV+Rig'">
-                </div>
+<div class="hero-buttons">
 
-                <!-- Gallery Image 2 -->
-                <div class="rounded-lg overflow-hidden border border-blue-900/40 h-60 relative group">
-                    <img src="https://images.unsplash.com/photo-1557597774-9d273605dfa9?auto=format&fit=crop&w=500&q=80" alt="Field Pole Camera" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" onerror="this.src='https://placehold.co/400x300/031430/FFF?text=Pole+Mount'">
-                </div>
+<a href="tel:8685809892" class="btn call">
 
-                <!-- Gallery Image 3 (Middle Card with Blue Border & Centered "VIEW MORE PHOTOS" Button) -->
-                <div class="rounded-lg overflow-hidden border-2 border-brand-accentBlue h-60 relative group flex items-center justify-center">
-                    <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=500&q=80" alt="House Camera Installation" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition duration-300" onerror="this.src='https://placehold.co/400x300/031430/FFF?text=Home+Install'">
-                    <div class="absolute inset-0 bg-black/45"></div>
-                    <!-- Trigger expanded photo viewing modal -->
-                    <button onclick="openModal('expanded-photos-modal')" class="relative z-10 bg-brand-accentBlue/90 hover:bg-brand-accentBlue border border-white/35 text-white font-black text-[10px] tracking-wider px-4 py-2.5 rounded shadow-lg transition">
-                        VIEW MORE PHOTOS
-                    </button>
-                </div>
+CALL NOW
 
-                <!-- Gallery Image 4 -->
-                <div class="rounded-lg overflow-hidden border border-blue-900/40 h-60 relative group">
-                    <img src="https://images.unsplash.com/photo-1507842217343-583bb7270b66?auto=format&fit=crop&w=500&q=80" alt="Library ceiling dome" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" onerror="this.src='https://placehold.co/400x300/031430/FFF?text=Library+Dome'">
-                </div>
+</a>
 
-                <!-- Gallery Image 5 -->
-                <div class="rounded-lg overflow-hidden border border-blue-900/40 h-60 relative group">
-                    <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=500&q=80" alt="Office meeting room dome" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" onerror="this.src='https://placehold.co/400x300/031430/FFF?text=Office+Install'">
-                </div>
+<a href="https://wa.me/918685809892"
 
-            </div>
+class="btn whatsapp">
 
-        </div>
-    </section>
+WHATSAPP US
 
-    <!-- WHY CHOOSE US (Symmetric panels) -->
-    <section id="whyus" class="py-14 bg-[#020b1c] border-t border-b border-blue-950/75">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h2 class="text-xl font-extrabold tracking-widest text-white uppercase mb-8">WHY CHOOSE NEXSIGHT?</h2>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-                <div class="bg-brand-cardDark/55 p-6 rounded-lg border border-blue-950">
-                    <h3 class="text-brand-accentBlue font-extrabold text-2xl">100% Genuine</h3>
-                    <p class="text-xs text-gray-400 mt-2">Only original security hardware from licensed and verified manufacturers.</p>
-                </div>
-                <div class="bg-brand-cardDark/55 p-6 rounded-lg border border-blue-950">
-                    <h3 class="text-brand-accentBlue font-extrabold text-2xl">Clean Wiring</h3>
-                    <p class="text-xs text-gray-400 mt-2">Our technical experts ensure secure, clean-wired camera installations.</p>
-                </div>
-                <div class="bg-brand-cardDark/55 p-6 rounded-lg border border-blue-950">
-                    <h3 class="text-brand-accentBlue font-extrabold text-2xl">Unbeatable Rates</h3>
-                    <p class="text-xs text-gray-400 mt-2">Get high-fidelity commercial setups customized directly within your budget.</p>
-                </div>
-            </div>
-        </div>
-    </section>
+</a>
 
-    <!-- FOOTER / CONTACT & FORM (Perfect 3-Column Layout on Desktop matching screenshot) -->
-    <footer id="contact" class="bg-brand-bgDark border-t border-blue-950/90 pt-16 pb-8">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 pb-12 border-b border-blue-950">
-                
-                <!-- Column 1: CONTACT US (Location, Phone, Email, Clock) -->
-                <div class="lg:col-span-4 space-y-6">
-                    <h3 class="text-lg font-black tracking-wide text-white uppercase border-l-4 border-brand-accentBlue pl-3">CONTACT US</h3>
-                    
-                    <div class="space-y-4">
-                        <!-- Location Address -->
-                        <div class="flex items-start space-x-3.5">
-                            <span class="text-brand-accentBlue text-lg flex-shrink-0 mt-0.5">
-                                <i class="fa-solid fa-location-dot"></i>
-                            </span>
-                            <p class="text-sm text-gray-300 font-medium leading-relaxed">
-                                Sector 5, Vikas Colony, Ranwar Road, Karnal, Haryana
-                            </p>
-                        </div>
+</div>
 
-                        <!-- Phone Number -->
-                        <div class="flex items-center space-x-3.5">
-                            <span class="text-brand-accentBlue text-lg flex-shrink-0">
-                                <i class="fa-solid fa-phone"></i>
-                            </span>
-                            <p class="text-sm text-gray-300 font-semibold hover:text-brand-accentBlue transition">
-                                <a href="tel:8685809892">8685809892</a>
-                            </p>
-                        </div>
+</div>
 
-                        <!-- Email Address -->
-                        <div class="flex items-center space-x-3.5">
-                            <span class="text-brand-accentBlue text-lg flex-shrink-0">
-                                <i class="fa-solid fa-envelope"></i>
-                            </span>
-                            <p class="text-sm text-gray-300 font-medium hover:text-brand-accentBlue transition">
-                                <a href="mailto:kashyapvijay08592@gmail.com">kashyapvijay08592@gmail.com</a>
-                            </p>
-                        </div>
+<div class="hero-right">
 
-                        <!-- Working Timings -->
-                        <div class="flex items-center space-x-3.5">
-                            <span class="text-brand-accentBlue text-lg flex-shrink-0">
-                                <i class="fa-solid fa-clock"></i>
-                            </span>
-                            <p class="text-sm text-gray-300 font-medium">
-                                Mon - Sun: 9:00 AM - 8:00 PM
-                            </p>
-                        </div>
-                    </div>
-                </div>
+<img src="https://images.unsplash.com/photo-1580587771525-78b9dba3b914?q=80&w=900">
 
-                <!-- Column 2: SEND US A MESSAGE Input Forms -->
-                <div class="lg:col-span-5 space-y-6">
-                    <h3 class="text-lg font-black tracking-wide text-white uppercase border-l-4 border-brand-accentBlue pl-3">SEND US A MESSAGE</h3>
-                    
-                    <form id="contact-form" onsubmit="submitMessageForm(event)" class="space-y-3.5">
-                        <!-- Two Side-by-Side inputs for Desktop -->
-                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3.5">
-                            <input type="text" id="name" required placeholder="Your Name" class="bg-brand-cardDark border border-blue-900/40 rounded px-4 py-3.5 text-xs sm:text-sm text-white placeholder-gray-500 focus:outline-none focus:border-brand-accentBlue transition w-full">
-                            <input type="tel" id="phone" required placeholder="Your Phone" class="bg-brand-cardDark border border-blue-900/40 rounded px-4 py-3.5 text-xs sm:text-sm text-white placeholder-gray-500 focus:outline-none focus:border-brand-accentBlue transition w-full">
-                        </div>
-                        <input type="email" id="email" required placeholder="Your Email" class="bg-brand-cardDark border border-blue-900/40 rounded px-4 py-3.5 text-xs sm:text-sm text-white placeholder-gray-500 focus:outline-none focus:border-brand-accentBlue transition w-full">
-                        <textarea id="message" required rows="4" placeholder="Your Message" class="bg-brand-cardDark border border-blue-900/40 rounded px-4 py-3.5 text-xs sm:text-sm text-white placeholder-gray-500 focus:outline-none focus:border-brand-accentBlue transition w-full resize-none"></textarea>
-                        
-                        <button type="submit" class="bg-brand-accentBlue hover:bg-blue-700 text-white font-extrabold text-xs sm:text-sm px-6 py-3.5 rounded flex items-center justify-center space-x-2 transition shadow-lg">
-                            <i class="fa-solid fa-paper-plane"></i>
-                            <span>SEND MESSAGE</span>
-                        </button>
-                    </form>
-                </div>
+<img src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?q=80&w=900">
 
-                <!-- Column 3: FOLLOW US and Need Help widget panel -->
-                <div class="lg:col-span-3 space-y-6">
-                    <div class="space-y-3.5">
-                        <h3 class="text-lg font-black tracking-wide text-white uppercase border-l-4 border-brand-accentBlue pl-3">FOLLOW US</h3>
-                        <!-- Colored Social Buttons matching design -->
-                        <div class="flex items-center space-x-3 pt-1">
-                            <a href="#" class="w-10 h-10 rounded-full bg-blue-600 hover:opacity-90 text-white flex items-center justify-center text-base transition">
-                                <i class="fa-brands fa-facebook-f"></i>
-                            </a>
-                            <a href="#" class="w-10 h-10 rounded-full bg-gradient-to-tr from-yellow-500 via-pink-500 to-purple-600 hover:opacity-90 text-white flex items-center justify-center text-base transition">
-                                <i class="fa-brands fa-instagram"></i>
-                            </a>
-                            <a href="https://wa.me/918685809892" target="_blank" class="w-10 h-10 rounded-full bg-brand-whatsapp hover:opacity-90 text-white flex items-center justify-center text-base transition">
-                                <i class="fa-brands fa-whatsapp"></i>
-                            </a>
-                            <a href="#" class="w-10 h-10 rounded-full bg-red-600 hover:opacity-90 text-white flex items-center justify-center text-base transition">
-                                <i class="fa-brands fa-youtube"></i>
-                            </a>
-                        </div>
-                    </div>
+</div>
 
-                    <!-- NEED HELP Widget Panel with Phone number CTA -->
-                    <div class="bg-brand-cardDark border border-blue-900/30 p-4.5 rounded-xl space-y-4 flex flex-col justify-between">
-                        <div class="flex items-center space-x-3.5">
-                            <div class="w-10 h-10 rounded-full bg-brand-accentBlue/20 flex items-center justify-center text-brand-accentBlue">
-                                <i class="fa-solid fa-headset text-lg"></i>
-                            </div>
-                            <div>
-                                <h4 class="text-xs font-black text-white">NEED HELP?</h4>
-                                <p class="text-[10px] text-gray-400 font-bold uppercase">We are here for you!</p>
-                            </div>
-                        </div>
-                        <a href="tel:8685809892" class="bg-brand-accentBlue hover:bg-blue-700 text-white font-extrabold text-xs py-2.5 px-3 rounded flex items-center justify-center space-x-2 transition shadow-md">
-                            <i class="fa-solid fa-phone"></i>
-                            <span>CALL NOW 8685809892</span>
-                        </a>
-                    </div>
-                </div>
+</section>
 
-            </div>
+<!-- ABOUT -->
 
-            <!-- Footer Details -->
-            <div class="pt-8 flex flex-col sm:flex-row items-center justify-between text-gray-500 text-[11px] font-semibold space-y-3 sm:space-y-0">
-                <p>© 2024 NEXSIGHT SECURITY SOLUTIONS. All Rights Reserved.</p>
-                <p>Designed with <span class="text-brand-accentBlue">💙</span> for your security</p>
-            </div>
-        </div>
-    </footer>
+<section class="about" id="about">
 
-    <!-- INTERACTIVE FLOATING WHATSAPP ACTION BUTTON -->
-    <a href="https://wa.me/918685809892" target="_blank" class="fixed bottom-6 right-6 z-50 bg-brand-whatsapp text-white w-14 h-14 rounded-full flex items-center justify-center shadow-[0_4px_20px_rgba(37,211,102,0.4)] hover:scale-105 active:scale-95 transition-all group" aria-label="WhatsApp Support">
-        <i class="fa-brands fa-whatsapp text-3xl"></i>
-        <!-- Ripple ping layer -->
-        <span class="absolute -inset-1 rounded-full border-2 border-brand-whatsapp/50 animate-ping opacity-65 pointer-events-none"></span>
-    </a>
+<h2 class="section-title">ABOUT US</h2>
 
-    <!-- PREMIUM INTERACTIVE POPUPS (Avoids default browser alerts completely) -->
-    
-    <!-- Contact Confirmation popup modal -->
-    <div id="success-modal" class="fixed inset-0 z-50 flex items-center justify-center hidden p-4">
-        <div class="fixed inset-0 bg-black/80 backdrop-blur-sm" onclick="closeModal('success-modal')"></div>
-        <div class="bg-brand-cardDark border border-blue-900/60 p-6 sm:p-8 rounded-xl max-w-sm w-full relative z-10 text-center space-y-4">
-            <div class="w-12 h-12 rounded-full bg-green-500/10 border border-green-500/30 flex items-center justify-center text-green-500 mx-auto text-2xl">
-                <i class="fa-solid fa-circle-check"></i>
-            </div>
-            <h3 class="text-lg font-bold text-white uppercase tracking-wider">Message Sent</h3>
-            <p class="text-xs text-gray-400 leading-relaxed">Thank you for writing to Nexsight Security Solutions. We will contact you shortly to plan your on-site survey.</p>
-            <button onclick="closeModal('success-modal')" class="w-full bg-brand-accentBlue hover:bg-blue-700 text-white font-bold py-2.5 rounded text-xs transition">
-                CONFIRM
-            </button>
-        </div>
-    </div>
+<div class="about-grid">
 
-    <!-- About read more details modal -->
-    <div id="read-more-modal" class="fixed inset-0 z-50 flex items-center justify-center hidden p-4">
-        <div class="fixed inset-0 bg-black/85 backdrop-blur-sm" onclick="closeModal('read-more-modal')"></div>
-        <div class="bg-brand-cardDark border border-blue-900/60 p-6 sm:p-8 rounded-xl max-w-lg w-full relative z-10 text-left space-y-4">
-            <div class="flex justify-between items-center pb-2 border-b border-blue-950">
-                <h3 class="text-base font-bold text-white uppercase tracking-wider">WHO WE ARE</h3>
-                <button onclick="closeModal('read-more-modal')" class="text-gray-400 hover:text-white"><i class="fa-solid fa-xmark text-lg"></i></button>
-            </div>
-            <div class="text-xs sm:text-sm text-gray-300 space-y-3 leading-relaxed">
-                <p><strong>NEXSIGHT SECURITY SOLUTIONS</strong> works strictly on securing the premises of commercial, domestic, agricultural, and industrial sectors across the city of Karnal and nearby districts in Haryana.</p>
-                <p>We source robust camera equipment from authorized distributors to guarantee absolute warranty and durability. Our technicians possess high standards of routing wire connections cleanly and ensuring remote views are configured successfully on multiple devices simultaneously.</p>
-            </div>
-            <div class="flex justify-end pt-2">
-                <button onclick="closeModal('read-more-modal')" class="bg-brand-accentBlue hover:bg-blue-700 text-white font-bold px-4 py-2 rounded text-xs transition">CLOSE</button>
-            </div>
-        </div>
-    </div>
+<div class="about-box">
 
-    <!-- Expanded Gallery Photos selection -->
-    <div id="expanded-photos-modal" class="fixed inset-0 z-50 flex items-center justify-center hidden p-4">
-        <div class="fixed inset-0 bg-black/85 backdrop-blur-sm" onclick="closeModal('expanded-photos-modal')"></div>
-        <div class="bg-brand-cardDark border border-blue-900/60 p-6 sm:p-8 rounded-xl max-w-2xl w-full relative z-10 text-left space-y-4">
-            <div class="flex justify-between items-center pb-2 border-b border-blue-950">
-                <h3 class="text-base font-bold text-white uppercase tracking-wider">COMPLETED INSTALLATIONS</h3>
-                <button onclick="closeModal('expanded-photos-modal')" class="text-gray-400 hover:text-white"><i class="fa-solid fa-xmark text-lg"></i></button>
-            </div>
-            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 max-h-[60vh] overflow-y-auto pr-2">
-                <div class="rounded-lg overflow-hidden border border-blue-950">
-                    <img src="https://images.unsplash.com/photo-1542744094-3a31f103e35f?auto=format&fit=crop&w=400&q=80" alt="Control deck" class="w-full h-36 object-cover" onerror="this.src='https://placehold.co/400x300/031430/FFF?text=Live+Desk'">
-                    <p class="p-2 text-[10px] text-gray-400 bg-[#020b1a] font-bold">Live Monitoring System Setup</p>
-                </div>
-                <div class="rounded-lg overflow-hidden border border-blue-950">
-                    <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=400&q=80" alt="Warehouse setup" class="w-full h-36 object-cover" onerror="this.src='https://placehold.co/400x300/031430/FFF?text=Industrial'">
-                    <p class="p-2 text-[10px] text-gray-400 bg-[#020b1a] font-bold">Industrial Corridor Dome</p>
-                </div>
-            </div>
-            <div class="flex justify-end pt-2">
-                <button onclick="closeModal('expanded-photos-modal')" class="bg-brand-accentBlue text-white font-bold px-4 py-2 rounded text-xs transition">CLOSE</button>
-            </div>
-        </div>
-    </div>
+<h3>NEXSIGHT SECURITY SOLUTIONS</h3>
 
-    <!-- MAIN INTERACTIVE SCRIPTS -->
-    <script>
-        // Toggle Mobile drawer menu
-        const mobileToggleBtn = document.getElementById('mobile-toggle');
-        const mobileMenu = document.getElementById('mobile-menu');
+<br>
 
-        mobileToggleBtn.addEventListener('click', () => {
-            mobileMenu.classList.toggle('hidden');
-        });
+<p>
 
-        // Close mobile menu on selecting any link
-        const mobLinks = document.querySelectorAll('.mob-link');
-        mobLinks.forEach(link => {
-            link.addEventListener('click', () => {
-                mobileMenu.classList.add('hidden');
-            });
-        });
+Trusted CCTV & Security Service Provider in Karnal, Haryana.
 
-        // Toggle Modals
-        function openModal(id) {
-            document.getElementById(id).classList.remove('hidden');
-            document.body.classList.add('overflow-hidden');
-        }
+Professional CCTV installation, IP camera setup,
 
-        function closeModal(id) {
-            document.getElementById(id).classList.add('hidden');
-            document.body.classList.remove('overflow-hidden');
-        }
+DVR/NVR configuration and surveillance solutions.
 
-        // Send Message Form Simulated Action handler
-        function submitMessageForm(event) {
-            event.preventDefault();
-            
-            // Collect/Reset elements securely
-            document.getElementById('name').value = '';
-            document.getElementById('phone').value = '';
-            document.getElementById('email').value = '';
-            document.getElementById('message').value = '';
+</p>
 
-            // Open popup confirmation modal instead of basic alert
-            openModal('success-modal');
-        }
-    </script>
+</div>
+
+<div class="features">
+
+<div class="feature">
+
+<i class="fa-solid fa-award"></i>
+
+<h3>Quality Products</h3>
+
+</div>
+
+<div class="feature">
+
+<i class="fa-solid fa-user-gear"></i>
+
+<h3>Expert Technicians</h3>
+
+</div>
+
+<div class="feature">
+
+<i class="fa-solid fa-shield"></i>
+
+<h3>Trust & Security</h3>
+
+</div>
+
+<div class="feature">
+
+<i class="fa-solid fa-headset"></i>
+
+<h3>24/7 Support</h3>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- SERVICES -->
+
+<section class="services" id="services">
+
+<h2 class="section-title">
+
+OUR SERVICES
+
+</h2>
+
+<div class="cards">
+
+<div class="card">
+
+<i class="fa-solid fa-video"></i>
+
+<h3>CCTV Installation</h3>
+
+</div>
+
+<div class="card">
+
+<i class="fa-solid fa-camera"></i>
+
+<h3>IP Camera Setup</h3>
+
+</div>
+
+<div class="card">
+
+<i class="fa-solid fa-hard-drive"></i>
+
+<h3>DVR / NVR</h3>
+
+</div>
+
+<div class="card">
+
+<i class="fa-solid fa-wifi"></i>
+
+<h3>Wireless Cameras</h3>
+
+</div>
+
+<div class="card">
+
+<i class="fa-solid fa-mobile-screen"></i>
+
+<h3>Mobile Viewing</h3>
+
+</div>
+
+<div class="card">
+
+<i class="fa-solid fa-screwdriver-wrench"></i>
+
+<h3>Repair & Maintenance</h3>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- GALLERY -->
+
+<section class="gallery" id="gallery">
+
+<h2 class="section-title">
+
+OUR GALLERY
+
+</h2>
+
+<div class="gallery-grid">
+
+<img src="https://images.unsplash.com/photo-1558002038-1055907df827?q=80&w=900">
+
+<img src="https://images.unsplash.com/photo-1580587771525-78b9dba3b914?q=80&w=900">
+
+<img src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?q=80&w=900">
+
+<img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?q=80&w=900">
+
+</div>
+
+</section>
+
+<!-- CONTACT -->
+
+<section class="contact" id="contact">
+
+<div class="contact-info">
+
+<h2>CONTACT US</h2>
+
+<p><i class="fa-solid fa-location-dot"></i>
+
+Sector 5, Vikas Colony,
+
+Karnal, Haryana
+
+</p>
+
+<p>
+
+<i class="fa-solid fa-phone"></i>
+
+8685809892
+
+</p>
+
+<p>
+
+<i class="fa-solid fa-envelope"></i>
+
+kashyapvijay08592@gmail.com
+
+</p>
+
+</div>
+
+<form>
+
+<h2>Send Us A Message</h2>
+
+<br>
+
+<input type="text"
+
+placeholder="Your Name">
+
+<input type="email"
+
+placeholder="Your Email">
+
+<input type="text"
+
+placeholder="Your Phone">
+
+<textarea rows="5"
+
+placeholder="Your Message">
+
+</textarea>
+
+<button>
+
+SEND MESSAGE
+
+</button>
+
+</form>
+
+</section>
+
+<footer>
+
+© 2026 NEXSIGHT SECURITY SOLUTIONS.
+
+All Rights Reserved.
+
+</footer>
+
+<a href="https://wa.me/918685809892"
+
+class="float">
+
+<i class="fa-brands fa-whatsapp"></i>
+
+</a>
+
+<script>
+
+document.querySelectorAll('a[href^="#"]').forEach(anchor=>{
+
+anchor.addEventListener('click',function(e){
+
+e.preventDefault();
+
+document.querySelector(this.getAttribute('href'))
+
+.scrollIntoView({
+
+behavior:'smooth'
+
+});
+
+});
+
+});
+
+</script>
+
 </body>
+
 </html>
-                    images/
-├── camera.png
-├── g1.jpg
-├── g2.jpg
-├── g3.jpg
-├── g4.jpg
-└── g5.jpg
-
-```
-
