@@ -1,5 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+<script>
+  emailjs.init("nMLXRFg7zjcAAn9OlH7VU");
+</script>
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -502,7 +507,7 @@ width:280px;
 .contact{
 
 grid-template-columns:1fr;
-
+  
 }
 
 .features{
@@ -898,7 +903,29 @@ behavior:'smooth'
 });
 
 </script>
+<script>
+document
+  .getElementById("contact-form")
+  .addEventListener("submit", function(event) {
 
+    event.preventDefault();
+
+    emailjs.sendForm(
+      "service_lwic349",
+      "template_9rjba0r",
+      this
+    )
+    .then(() => {
+      alert("Message Sent Successfully!");
+      this.reset();
+    })
+    .catch((error) => {
+      alert("Failed to send message.");
+      console.log(error);
+    });
+
+});
+</script>
 </body>
 
-</html>
+
